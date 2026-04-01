@@ -1,6 +1,6 @@
 app-id: io.github.tobagin.Draughts
 runtime: org.gnome.Platform
-runtime-version: '49'
+runtime-version: '50'
 sdk: org.gnome.Sdk
 command: draughts
 
@@ -11,21 +11,6 @@ finish-args:
   - --device=dri
   - --socket=pulseaudio
   - --share=network
-
-cleanup:
-  - /include
-  - /lib/pkgconfig
-  - /lib/cmake
-  - /man
-  - /share/doc
-  - /share/gtk-doc
-  - /share/man
-  - /share/pkgconfig
-  - /share/vala
-  - /share/aclocal
-  - /share/devhelp
-  - '*.la'
-  - '*.a'
 
 modules:
   - name: draughts
