@@ -12,6 +12,21 @@ finish-args:
   - --socket=pulseaudio
   - --share=network
 
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - /lib/cmake
+  - /man
+  - /share/doc
+  - /share/gtk-doc
+  - /share/man
+  - /share/pkgconfig
+  - /share/vala
+  - /share/aclocal
+  - /share/devhelp
+  - '*.la'
+  - '*.a'
+
 modules:
   - name: draughts
     buildsystem: meson
@@ -20,5 +35,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/tobagin/Draughts.git
-        tag: v2.2.0
-        commit: cce44d1d6ef1cf17cbe6f38fdd6d8a96c0e2d939
+        tag: v2.3.0
